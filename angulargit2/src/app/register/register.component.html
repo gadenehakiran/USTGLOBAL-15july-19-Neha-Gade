@@ -1,0 +1,24 @@
+
+<div class="col-md-4 offset-md-4 mt-5 card-card-body">
+  <form action="" [formGroup]='registerForm' (ngSubmit)='printform(registerForm)' >
+      <legend class="text-center">Register Here</legend>
+   <div class="form-group"> 
+                  <label for="email">Email-Id</label>
+                  <input type="email" class="form-control" id="email" FormControlName='email' placeholder="enter Email-Id">
+             
+              <div *ngIf='email.touched && email.invalid'>
+                      <div class="alert alert-danger" *ngIf='email.errors.email'></div>
+                  </div>
+                </div> 
+  
+              <div class="form-group">
+                      <label for="password">Password</label>
+                      <input type="password" class="form-control" id="name" placeholder="enter password">
+                  </div>
+                 
+                      
+    
+      <button type="submit" class="btn btn-dark" >Register</button>
+  </form>
+  
+  </div>
