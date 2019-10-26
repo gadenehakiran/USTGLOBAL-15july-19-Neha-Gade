@@ -1,0 +1,31 @@
+<p>ifswitch works!</p>
+<!-- <div *ngIf='condition; then trueBlock else falseBlock'></div>
+<input type="text" #inputElement>
+<button (click)='printInput(inputElement)'>print this input </button>
+<ng-template #trueBlock>condition is true</ng-template>
+<ng-template #falseBlock>condition is false</ng-template> -->
+
+
+<div [ngSwitch]='person'>
+<p *ngSwitchCase='"neha"'>kkkkkkkk</p>
+<p *ngSwitchCase="'jen'">hhhhhhhhhh</p>
+<p *ngSwitchCase="'wen'">hhhhhhhh</p>
+<p *ngSwitchCase="'men'">rrrrrrrrrrrrrr</p>
+<p *ngSwitchCase="'zen'">qqqqqqqqqqqqqqqq</p>
+<p *ngSwitchDefault>ddddddd</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>

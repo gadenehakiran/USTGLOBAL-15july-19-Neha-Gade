@@ -1,0 +1,20 @@
+<!-- <p>news works!</p> -->
+<!-- <p>bikes works!</p> -->
+<div class="container mt-4">
+    <div class="col-md-3 float-left">
+    <div class="card card-body  " *ngFor="let new of news">
+        <img src="{{new.img}}" alt="" class="card-img-top" (click)='sendNew(new)'>
+        <h4 class="card-title">{{new.brand}}</h4>
+    </div>
+    </div>
+
+<app-news-details [newDetails]='newData'></app-news-details>
+
+
+
+
+
+
+
+
+</div>
